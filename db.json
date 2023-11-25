@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Coffe 1",
+      "image": "https://picsum.photos/200/100",
+      "price": "5465456",
+      "desc": "haha"
+    },
+    {
+      "id": 2,
+      "name": "Coffe 2",
+      "image": "https://picsum.photos/200/100",
+      "price": 200,
+      "desc": "c2f2f2"
+    },
+    {
+      "id": 3,
+      "name": "Coffe 3",
+      "image": "https://picsum.photos/200/100",
+      "price": 300,
+      "desc": "c3f3f"
+    },
+    {
+      "name": "coffe 4",
+      "image": "https://picsum.photos/200/100",
+      "price": "400",
+      "desc": "háhahsss",
+      "id": 4
+    },
+    {
+      "name": "coffe 5",
+      "image": "https://picsum.photos/200/100 ",
+      "price": "500",
+      "desc": "haha",
+      "id": 5
+    },
+    {
+      "name": "coffe 6",
+      "image": "https://picsum.photos/200/100 ",
+      "price": "600",
+      "desc": "4444",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "email": "huynhldph29106@fpt.edu.vn",
+      "password": "$2a$10$6kXeGCPOVU2.qOVT4Ij0KOt5.4ExsaB7s6LafSH/6SBfnpabdwM5G",
+      "username": "huynhldph29106@fpt.edu.vn",
+      "role": 0,
+      "id": 1
+    }
+  ],
+  "cart": []
+}
