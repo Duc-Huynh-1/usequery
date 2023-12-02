@@ -1,8 +1,7 @@
-import React from 'react'
 
 export const Cart = () => {
   return (
-    <div>
+    <div className="pt-[160px] mx-[80px]">
        <div>
                 <h1 className='text-xl font-bold mb-[20px]'>Cart</h1>
                 <table >

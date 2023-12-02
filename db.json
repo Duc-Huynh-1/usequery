@@ -2,30 +2,30 @@
   "products": [
     {
       "id": 1,
-      "name": "Coffe 1",
-      "image": "https://picsum.photos/200/100",
-      "price": "5465456",
-      "desc": "haha"
+      "name": "Bàn gỗ cao cấp",
+      "image": "https://dommocgia.com/wp-content/uploads/2023/11/Anh-san-pham-dong-bo-1.png",
+      "price": "100",
+      "desc": "gỗ chắc chắn "
     },
     {
       "id": 2,
-      "name": "Coffe 2",
-      "image": "https://picsum.photos/200/100",
-      "price": 200,
-      "desc": "c2f2f2"
+      "name": "Gương để bàn",
+      "image": "https://dommocgia.com/wp-content/uploads/2023/10/Anh-san-pham-dong-bo-1.jpg",
+      "price": "200",
+      "desc": "gỗ chắc chắn  và gương rõ nét"
     },
     {
       "id": 3,
-      "name": "Coffe 3",
-      "image": "https://picsum.photos/200/100",
+      "name": "Gương cheo tường",
+      "image": "https://dommocgia.com/wp-content/uploads/2023/10/Anh-san-pham-dong-bo.png",
       "price": 300,
-      "desc": "c3f3f"
+      "desc": "chắc chắn , được bao bọc bên ngoài "
     },
     {
-      "name": "coffe 4",
-      "image": "https://picsum.photos/200/100",
+      "name": "Bàn trang điểm ",
+      "image": "https://dommocgia.com/wp-content/uploads/2023/10/2-7.png",
       "price": "400",
-      "desc": "háhahsss",
+      "desc": "kệ chắc chắn dễ lắp , để được nhiều đồ ",
       "id": 4
     },
     {
@@ -41,16 +41,43 @@
       "price": "600",
       "desc": "4444",
       "id": 6
+    },
+    {
+      "name": "san pham tot",
+      "image": "https://picsum.photos/200/100",
+      "price": "1000",
+      "desc": "lalalaa",
+      "id": 7
     }
   ],
   "users": [
     {
-      "email": "huynhldph29106@fpt.edu.vn",
-      "password": "$2a$10$6kXeGCPOVU2.qOVT4Ij0KOt5.4ExsaB7s6LafSH/6SBfnpabdwM5G",
-      "username": "huynhldph29106@fpt.edu.vn",
+      "email": "huynhkendy2003@gmail.com",
+      "password": "$2a$10$jNM5Ej/Ijqeqx37cMEJ5beHb2XWCBofGDjMt2Ulkz4JnQyIFEkuO2",
+      "username": "Duc Huynh",
       "role": 0,
-      "id": 1
+      "id": 2
+    },
+    {
+      "email": "huynhldph29106@fpt.edu.vn",
+      "password": "$2a$10$oHg9l9BVioIgh4sg7KfbUeXJgl.9plL8r.Ffyjis7otDbJlPMS3rK",
+      "username": "Đức Huynh",
+      "role": 1,
+      "id": 3
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "idUser": "jjjjj",
+      "products": [
+        {
+          "name": "coffe 6",
+          "image": "https://picsum.photos/200/100 ",
+          "price": "600",
+          "desc": "4444",
+          "id": 6
+        }
+      ]
+    }
+  ]
 }

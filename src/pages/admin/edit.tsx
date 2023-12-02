@@ -32,7 +32,7 @@ export const Edit = () => {
         onSuccess: () => {
             queryClient.invalidateQueries();
             alert("Update thành công");
-            navigate("/admin");
+            navigate("/admin/Managas");
         },
     });
 
@@ -41,62 +41,38 @@ export const Edit = () => {
     };
 
     return (
-        <div className="mt-20 text-center">
-            <div>
-                <h1 className="text-3xl font-semibold">Chỉnh sửa sản phẩm</h1>
-            </div>
-
-            <form className="mt-20" onSubmit={handleSubmit(onhandleSubmit)}>
-                <div>
-                    <label htmlFor="name">Tên</label>
-                    <input
-                        type="text"
-                        className="border ml-15"
-                        {...register("name", { required: "Tên không được bỏ trống" })}
-                    />
-                    {errors.name && <p className="text-red-500">{errors.name.message}</p>}
-                </div>
-
-                <div className="my-10">
-                    <label htmlFor="image">Hình ảnh</label>
-                    <input
-                        type="text"
-                        className="border ml-15"
-                        {...register("image", { required: "Hình ảnh không được bỏ trống" })}
-                    />
-                    {errors.image && (
-                        <p className="text-red-500">{errors.image.message}</p>
-                    )}
-                </div>
-
-                <div>
-                    <label htmlFor="price">Giá</label>
-                    <input
-                        type="number"
-                        className="border ml-15"
-                        {...register("price", { required: "Giá không được bỏ trống" })}
-                    />
-                    {errors.price && (
-                        <p className="text-red-500">{errors.price.message}</p>
-                    )}
-                </div>
-
-                <div className="my-10">
-                    <label htmlFor="desc">Mô tả</label>
-                    <input
-                        type="text"
-                        className="border ml-15"
-                        {...register("desc", { required: "Mô tả không được bỏ trống" })}
-                    />
-                    {errors.desc && <p className="text-red-500">{errors.desc.message}</p>}
-                </div>
-
-                <div>
-                    <button className="w-80 h-40 border" type="submit">
-                        {/* {isLoading ? 'Đang xử lý...' : 'Gửi'} */} submit
-                    </button>
-                </div>
-            </form>
+        <div className=' mt-[20px] w-[1000px]'>
+        <div>
+          <h1 className='text-3xl font-semibold '>Update sản phẩm !</h1>
         </div>
+  
+        <form action="" className='mt-[20px]' onSubmit={handleSubmit(onhandleSubmit)}>
+          <div>
+            <div className="text-base font-semibold">Tên Sản Phẩm </div>
+            <input type="text"  {...register("name", { required: true })} className="w-full border h-9 mt-[5px]  decoration-inherit outline-none shadow-inner" />
+            {errors.name && <p className="text-[red]">Vui lòng nhập dữ liệu cho trường này !</p>}
+          </div>
+          <div className="my-[20px]">
+            <div className="text-base font-semibold">Ảnh sản phẩm  </div>
+            <input type="text"  {...register("image", { required: true})} className="w-full border h-9 mt-[5px]  decoration-inherit outline-none shadow-inner" />
+            {errors.image && errors.image.type === "required" && (
+              <p className="text-[red]">Vui lòng nhập dữ liệu cho trường này !</p>
+            )}
+          </div>
+          <div>
+            <div className="text-base font-semibold">Giá Sản Phẩm </div>
+            <input type="number"  {...register("price", { required: true })} className="w-full border h-9 mt-[5px]  decoration-inherit outline-none shadow-inner" />
+            {errors.price && <p className="text-[red]">Vui lòng nhập dữ liệu cho trường này !</p>}
+          </div>
+          <div className="my-[20px]">
+            <div className="text-base font-semibold">Mô Tả </div>
+            <input type="text"  {...register("desc", { required: true })} className="w-full border h-9 mt-[5px]  decoration-inherit outline-none shadow-inner" />
+            {errors.desc && <p className="text-[red]">Vui lòng nhập dữ liệu cho trường này !</p>}
+          </div>
+          <div>
+            <button className="w-[80px] h-[40px] bg-[#ad8444] text-[white] font-semibold hover:bg-[#8f6849]">Update</button>
+          </div>
+        </form>
+      </div>
     );
 };

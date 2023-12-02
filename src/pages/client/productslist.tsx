@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Header } from '../heater/header'
 import { IProduct } from '../../types/products'
 import axios from 'axios'
 
@@ -13,13 +12,11 @@ export const Productslist = () => {
             })
     }, [])
     return (
-        <div>
-            <Header />
-            <div>
-                <div>
-                    <h1 className='text-2xl font-semibold my-[20px] ml-[100px]'>Sản Phẩm </h1>
+            <div className='py-[150px] px-[80px]'>
+                <div className='my-[20px]'>
+                    <h1 className='text-base font-semibold  '><a href="/" className='text-[#666666d9] hover:text-[#000]'>TRANG CHỦ </a> / SẢN PHẨM  </h1>
                 </div>
-                <table className='mx-[80px] '>
+                <table className=' '>
 
                     <thead>
                         <tr>
@@ -39,8 +36,8 @@ export const Productslist = () => {
                                 <td className='w-[400px] h-[40px] border'><img src={item.image} alt="" className='mx-auto w-[200px] h-[200px]' /></td>
                                 <td className='w-[300px] h-[40px] border'>{item.price}</td>
                                 <td className='w-[300px] h-[40px] border'>{item.desc}</td>
-                                <td className='w-[300px] h-[40px] border'>
-                                    <p>Details</p>
+                                <td className='w-[300px] h-[40px] border '>
+                                   <a href={`/products/${item.id}`}><button className='w-[80px] h-[35px] bg-[#e69d9d] text-[white] font-semibold'>Chi Tiết</button></a>
                                 </td>
                             </tr>
                         ))
@@ -49,6 +46,5 @@ export const Productslist = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
     )
 }
