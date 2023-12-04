@@ -36,7 +36,7 @@ export const Header = () => {
                                             <li>
                                                 <a href="" className="block pt-1 hover:text-[#ad8444] transition-all duration-150">
                                                     <i className="fa-solid fa-caret-right m-2"></i>
-                                                    Anh
+                                                    Đổi mật khẩu
                                                 </a>
                                             </li>
                                             <li>
@@ -51,7 +51,7 @@ export const Header = () => {
                                             <li>
                                                 <a href="" className="block pt-1 hover:text-[#ad8444] transition-all duration-150">
                                                     <i className="fa-solid fa-caret-right m-2"></i>
-                                                    Anh
+                                                    Đổi mật khẩu
                                                 </a>
                                             </li>
                                             <li>
@@ -63,15 +63,6 @@ export const Header = () => {
                                         </>
                                     )}
                                 </ul>
-
-                                {/* <li>
-                                        <a onClick={logOut} href="" className="block pt-1 hover:text-[#ad8444] transition-all duration-150">
-                                            <i className="fa-solid fa-caret-right m-2"></i>
-                                            Đăng xuất
-                                        </a>
-                                    </li>
-                                </ul> */}
-
                             </div>
 
                         </div>

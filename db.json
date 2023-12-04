@@ -29,21 +29,21 @@
       "id": 4
     },
     {
-      "name": "coffe 5",
+      "name": "Bàn trà nan sofa gỗ sồi, bàn gỗ tròn",
       "image": "https://picsum.photos/200/100 ",
       "price": "500",
       "desc": "haha",
       "id": 5
     },
     {
-      "name": "coffe 6",
+      "name": "Bàn trà gỗ xoay tròn",
       "image": "https://picsum.photos/200/100 ",
       "price": "600",
       "desc": "4444",
       "id": 6
     },
     {
-      "name": "san pham tot",
+      "name": "Bàn trà gỗ tròn tối giản phong cách",
       "image": "https://picsum.photos/200/100",
       "price": "1000",
       "desc": "lalalaa",
@@ -63,21 +63,29 @@
       "password": "$2a$10$oHg9l9BVioIgh4sg7KfbUeXJgl.9plL8r.Ffyjis7otDbJlPMS3rK",
       "username": "Đức Huynh",
       "role": 1,
-      "id": 3
+      "id": 1
     }
   ],
   "cart": [
     {
-      "idUser": "jjjjj",
+      "idUser": "1",
+      "username": "Đức Huynh",
       "products": [
         {
-          "name": "coffe 6",
-          "image": "https://picsum.photos/200/100 ",
-          "price": "600",
-          "desc": "4444",
-          "id": 6
+          "id": 2,
+          "name": "Gương để bàn",
+          "image": "https://dommocgia.com/wp-content/uploads/2023/10/Anh-san-pham-dong-bo-1.jpg",
+          "price": "200",
+          "desc": "gỗ chắc chắn  và gương rõ nét"
         }
-      ]
+      ],
+      "id": 1
+    },
+    {
+      "idUser": null,
+      "username": null,
+      "products": [],
+      "id": 2
     }
   ]
 }

@@ -4,8 +4,16 @@ const getCart = () => {
     return instance.get('/cart');
 }
 
-const addCart = (datas:any) => {
-    return instance.post('/cart', datas);
+const putCart = (id:number, datas: "") => {
+    return instance.put(`/cart/${id}`, datas);
 }
 
-export { getCart, addCart };
+const addCart = (datas: "") => {
+    return instance.post(`/cart`, datas);
+}
+// const removeCartA = (id:any) => {
+//     return instance.delete(`/cart/${id}`);
+// }
+
+
+export { getCart, addCart, putCart };

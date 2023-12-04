@@ -19,11 +19,13 @@ export const Signin = () => {
     onSuccess: (data) => {
       queryClient.invalidateQueries();
       if (data.data?.user.role == 1) {
+        localStorage.setItem('id', data.data.user.id)
         localStorage.setItem('role', data.data.user.role)
         localStorage.setItem('username', data.data.user.username);
         alert("Đăng nhập thành công");
         next('/admin');
       } else {
+        localStorage.setItem('id', data.data.user.id)
         localStorage.setItem('role', data.data.user.role)
         localStorage.setItem('username', data.data.user.username);
         alert('Đăng nhập thành công quyền member');
